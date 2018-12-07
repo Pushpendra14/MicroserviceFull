@@ -7,11 +7,11 @@
 * create a table **persons**
 
 ```sql
-create database training;
-create table training.persons(
-	id int(4) primary key not null auto_increment,
+create schema training;
+create table persons(
+	id integer identity primary key,
 	name varchar(40),
-	age int(4)
+	age int
 	);
 ```
 
