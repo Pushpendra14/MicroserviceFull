@@ -17,7 +17,6 @@ spring.profiles.active=native
 
 * Create a new Spring Boot project say, **SaturdayService**
 * Select **web** and **Config Client** libraries while creating the project
-* Add **@EnableConfigServer** annotation to the **SaturdayServiceApplication.java**
 
 * Create **bootstrap.properties** file in *resources* folder
 * Add the following lines to bootstrap.properties
