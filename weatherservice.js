@@ -3,9 +3,11 @@
 let app = require("express")();
 
 app.get("/weather/:city", (req, res) => {
-	let { city } = req.params;
-	let message = `Temperature of ${city} is ${Math.random() * 100}`;
-	res.end(message);
+	setTimeout(() => {
+		let { city } = req.params;
+		let message = `Temperature of ${city} is ${Math.random() * 100}`;
+		res.end(message);	
+	}, 5000);
 });
 
 app.listen(4000);
